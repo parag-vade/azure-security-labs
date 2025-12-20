@@ -6,3 +6,5 @@ terraform.tfvars
 
 # General
 *.log
+.terraform/
+.terraform.lock.hcl
