@@ -32,6 +32,7 @@ Traffic flowing over the internet is exposed to all kinds of threats. A VPN crea
     CertStoreLocation = 'Cert:\CurrentUser\My'
     }
     $cert = New-SelfSignedCertificate @params
+
     - Client certificate
     $params = @{
        Type = 'Custom'
@@ -143,16 +144,18 @@ For this lab, we’ll create a **self-signed root certificate** and a **client c
 
 ### Screenshots
 1. Web server with public IP accessible from internet
-![alt text](<Screenshot 2025-12-21 165307.png>)
+   <img width="1906" height="1072" alt="Screenshot 2025-12-21 165307" src="https://github.com/user-attachments/assets/452c1626-93e8-427d-ac91-f017d769e876" />
 
 2. Removed public IP from web server
-![alt text](<Screenshot 2025-12-21 165626.png>)
+ <img width="1657" height="981" alt="Screenshot 2025-12-21 165626" src="https://github.com/user-attachments/assets/096625eb-8c3b-4d81-af47-6bde8785c953" />
 
-3. Downloaded and installed VPN client
-![alt text](<Screenshot 2025-12-21 171257.png>)
+4. Downloaded and installed VPN client
+ <img width="1874" height="1011" alt="Screenshot 2025-12-21 171257" src="https://github.com/user-attachments/assets/b3f85c2b-6e3d-4e92-9c1f-c7034d9e0523" />
 
-4. Web server access thorugh VPN using private IP
-![alt text](<Screenshot 2025-12-21 171422.png>)
+5. Web server access thorugh VPN using private IP
+ <img width="1897" height="1066" alt="Screenshot 2025-12-21 171422" src="https://github.com/user-attachments/assets/4c38937f-5890-405e-b03f-b6395775f13c" />
 
-5. List of resources created 
-![alt text](<Screenshot 2025-12-21 171529.png>)
+6. List of resources created
+   <img width="1912" height="1019" alt="Screenshot 2025-12-21 171529" src="https://github.com/user-attachments/assets/2bc3774e-2784-45eb-9ca9-e1790f7ac0d1" />
+
+ 
