@@ -18,7 +18,7 @@ Traffic flowing over the internet is exposed to all kinds of threats. A VPN crea
 (Cost consideration: VPN Gateways are billed per hour and can be expensive)
 
 3. Authenticate clients - For lab purposes, we’ll generate a self-signed certificate generated using following PowerShell scripts-
-    - Self signed root certificate
+    - Self signed root certificate : <br> 
     $params = @{
     Type = 'Custom'
     Subject = 'CN=P2SRootCert'
@@ -33,7 +33,7 @@ Traffic flowing over the internet is exposed to all kinds of threats. A VPN crea
     }
     $cert = New-SelfSignedCertificate @params
 
-    - Client certificate
+    - Client certificate : <br>
     $params = @{
        Type = 'Custom'
        Subject = 'CN=P2SChildCert'
@@ -143,19 +143,19 @@ For this lab, we’ll create a **self-signed root certificate** and a **client c
 
 
 ### Screenshots
-1. Web server with public IP accessible from internet
+**1. Web server with public IP accessible from internet**
    <img width="1906" height="1072" alt="Screenshot 2025-12-21 165307" src="https://github.com/user-attachments/assets/452c1626-93e8-427d-ac91-f017d769e876" />
-
-2. Removed public IP from web server
+<br>
+**2. Removed public IP from web server**
  <img width="1657" height="981" alt="Screenshot 2025-12-21 165626" src="https://github.com/user-attachments/assets/096625eb-8c3b-4d81-af47-6bde8785c953" />
-
-4. Downloaded and installed VPN client
+<br>
+**3. Downloaded and installed VPN client**
  <img width="1874" height="1011" alt="Screenshot 2025-12-21 171257" src="https://github.com/user-attachments/assets/b3f85c2b-6e3d-4e92-9c1f-c7034d9e0523" />
-
-5. Web server access thorugh VPN using private IP
+<br>
+**4. Web server access thorugh VPN using private IP**
  <img width="1897" height="1066" alt="Screenshot 2025-12-21 171422" src="https://github.com/user-attachments/assets/4c38937f-5890-405e-b03f-b6395775f13c" />
-
-6. List of resources created
+<br>
+**5. List of resources created**
    <img width="1912" height="1019" alt="Screenshot 2025-12-21 171529" src="https://github.com/user-attachments/assets/2bc3774e-2784-45eb-9ca9-e1790f7ac0d1" />
 
  
