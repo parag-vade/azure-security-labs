@@ -1,5 +1,5 @@
-VPN
-The aim of using a VPN is to allow secure communication between devices and internal applications running in an Azure VNet over the internet — without using public IPs of VNet resources.
+# VPN
+- The aim of using a VPN is to allow secure communication between devices and internal applications running in an Azure VNet over the internet — without using public IPs of VNet resources.
 Traffic flowing over the internet is exposed to all kinds of threats. A VPN creates a secure tunnel through the internet.
 
 The VPN tunnel can use different protocols such as OpenVPN, Secure Socket Tunneling, and IKEv2, etc.
@@ -7,7 +7,7 @@ The VPN tunnel can use different protocols such as OpenVPN, Secure Socket Tunnel
 Client computers need to authenticate to the VPN to access resources.
 This authentication can be done using a certificate, Entra ID, etc.
 
-There are two types of VPN connections:
+## There are two types of VPN connections:
 
 Point-to-Site (P2S) — VPN connection is established between an individual device (or devices) and a network.
 Example: When a remote employee logs in to their organization’s network from home.
