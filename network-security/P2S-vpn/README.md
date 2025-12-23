@@ -9,7 +9,7 @@ Traffic flowing over the internet is exposed to all kinds of threats. A VPN crea
 
 - Point-to-Site (P2S) — VPN connection is established between an individual device (or devices) and a network. Example: When a remote employee logs in to their organization’s network from home.
 
-- Site-to-Site (S2S) — VPN connection between two networks. This is an always-on connection. All devices on one network can automatically access the other network without requiring client software on individual devices. Example: Connection between the networks of an on-premises data center and the cloud or a hybrid cloud setup.
+- Site-to-Site (S2S) — VPN connection between two networks. This is an always-on connection. All devices on one network can automatically access the other network without requiring client software on individual devices. Example: Connection between on-premises network and the cloud network or a hybrid cloud setup.
 
 ## Point-to-Site VPN: Implementation Overview
 1. Deploy a Windows web server with Internet Information Services (IIS) - Test the connection with this server over the internet first, then remove its public IP. The goal is to connect to this server over the internet using a VPN.
