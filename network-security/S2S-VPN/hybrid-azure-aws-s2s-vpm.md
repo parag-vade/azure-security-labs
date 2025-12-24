@@ -105,12 +105,74 @@ The flow follows these dependencies while parallelizing where possible.
 > Azure VM (10.1.1.4) pinging AWS EC2 (10.2.1.109). 0% packet loss, ~5ms latency. S2S VPN tunnel operational.
 
 
+**AWS EC2 → Azure VM**
+
+<img width="596" height="250" alt="ping-aws-to-azure" src="https://github.com/user-attachments/assets/2d26227b-a13b-42d8-9447-6b1a978cab72" />
 
 
+> AWS EC2 (10.2.1.109) pinging Azure VM (10.1.1.4). 0% packet loss, ~5ms latency. Bidirectional connectivity confirmed.
 
+---
 
+### Tunnel Status
 
+**Azure Connection Status**
+ 
 
+> Azure VPN connection showing "Connected" status with Local Network Gateway pointing to AWS Tunnel IP (54.157.190.87). Data flowing: 420 bytes in/out.
+
+<img width="1914" height="465" alt="azure-aws-connection" src="https://github.com/user-attachments/assets/39434a69-fe9b-4f0d-a24a-94377dd95e50" />
+
+**AWS Tunnel Status**
+
+ 
+> AWS Site-to-Site VPN connection showing Tunnel 1 status "UP" with Customer Gateway pointing to Azure VPN Gateway IP (57.151.32.26).
+
+<img width="1913" height="867" alt="aws-azure-connection" src="https://github.com/user-attachments/assets/d58ac62b-a59d-4707-b26b-c320ee1d463e" />
+
+---
+
+### Azure Resources
+
+**Resource Group Overview**
+
+<img width="1330" height="766" alt="azure-rg" src="https://github.com/user-attachments/assets/06cd5145-e771-4ba9-9af6-73a8f0b41095" />
+
+> All Azure resources for S2S VPN lab: VPN Gateway, Local Network Gateway, VNet, NSG, VM, and supporting resources.
+
+**VNet Subnets**
+
+<img width="1907" height="630" alt="azure subnets" src="https://github.com/user-attachments/assets/2aef419e-0707-4ff6-95a5-3ad9a8be0320" />
+
+> Azure VNet with workload-subnet (10.1.1.0/24) for VMs and GatewaySubnet (10.1.255.0/27) for VPN Gateway.
+
+**VPN Gateway Connections**
+
+<img width="1914" height="694" alt="azure-vpn-gateway" src="https://github.com/user-attachments/assets/f3efa43c-10df-4e38-8ee1-18230f817dea" />
+
+> VPN Gateway connection to AWS showing "Connected" status via aws-local-gateway peer.
+
+**Local Network Gateway**
+
+<img width="1907" height="553" alt="azure-local-gateway" src="https://github.com/user-attachments/assets/034afed8-8b27-415a-ba82-1f048d00c98f" />
+ 
+> Local Network Gateway representing AWS. Connection type: Site-to-site (IPsec), Status: Connected.
+
+---
+
+### AWS Resources
+
+**VPC Resource Map**
+
+<img width="1631" height="395" alt="aws-vpc-resource-map" src="https://github.com/user-attachments/assets/4f5d56c1-1165-4024-b1db-445efa1b96c5" />
+ 
+> AWS VPC (10.2.0.0/16) architecture showing private-subnet (10.2.1.0/24), route tables, and internet gateway.
+
+**Customer Gateway**
+
+<img width="1911" height="549" alt="aws-customer-gateway" src="https://github.com/user-attachments/assets/ae4cf232-1032-4a76-b4a4-4f3ce27ee9d9" />
+
+> Customer Gateway representing Azure VPN Gateway. BGP ASN 65515 (Azure default), IP address 57.151.32.26.
 
 
 
