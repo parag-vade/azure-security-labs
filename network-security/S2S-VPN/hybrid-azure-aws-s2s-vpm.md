@@ -99,7 +99,7 @@ The flow follows these dependencies while parallelizing where possible.
 
 ### Connectivity Proof
 
-**Azure VM → AWS EC2**
+**Azure VM → AWS EC2** <br>
 <img width="568" height="211" alt="ping-azure-to-aws" src="https://github.com/user-attachments/assets/14daf328-cfdb-4231-8d0a-397225933283" />
 > Azure VM (10.1.1.4) pinging AWS EC2 (10.2.1.109). 0% packet loss, ~5ms latency. S2S VPN tunnel operational.
 
